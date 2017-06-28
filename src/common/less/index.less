@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+}
+
+.clearfix {
+  display: inline-block;
+  &:after {
+    display: block;
+    content: '.';
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.v_middle {
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法： Chrome 21+ */
+  display: flex; /* 新版本语法： Opera 12.1, Firefox 22+ */ /*垂直居中*/	/*老版本语法*/
+  -webkit-box-align: center;
+  -moz-box-align: center; /*混合版本语法*/
+  -ms-flex-align: center; /*新版本语法*/
+  -webkit-align-items: center;
+  align-items: center; /*水平居中*/ /*老版本语法*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center; /*混合版本语法*/
+  -ms-flex-pack: center; /*新版本语法*/
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border-1px {
+    &::after {
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+  }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .border-1px {
+    &::after {
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+    }
+  }
+
+}
+
+@screen-xs-max: 768px;
+@media (max-width: @screen-xs-max) {
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+}
+
+@screen-sm-min: 768px;
+@media (min-width: @screen-sm-min) {
+
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+}
+
+
+@screen-md-min: 992px;
+@media (min-width: @screen-md-min) {
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33%;
+  }
+}
+
+@screen-lg-min: 1200px;
+@media (min-width: @screen-lg-min) {
+
+}

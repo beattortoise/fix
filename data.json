@@ -1,0 +1,61 @@
+{
+  "status": 200,
+  "message": {
+    "user": {
+      "is_login": true,
+      "uid": "1"
+    },
+    "goods": [
+      {
+        "name": "iphone7",
+        "id": "4"
+      },
+      {
+        "name": "iphone6",
+        "id": "3"
+      },
+      {
+        "name": "iphone5",
+        "id": "2"
+      },
+      {
+        "name": "iphone4",
+        "id": "1"
+      }
+    ],
+    "order": {
+      "phone": "",
+      "id": ""
+    },
+    "fault": [
+      {
+        "name": "屏幕类",
+        "id": "1"
+      },
+      {
+        "name": "电池类",
+        "id": "2"
+      },
+      {
+        "name": "无法开机",
+        "id": "3"
+      },
+      {
+        "name": "进水进液",
+        "id": "4"
+      },
+      {
+        "name": "信号类",
+        "id": "5"
+      },
+      {
+        "name": "按键类",
+        "id": "6"
+      },
+      {
+        "name": "其它",
+        "id": "7"
+      }
+    ]
+  }
+}
